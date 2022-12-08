@@ -10,13 +10,13 @@ function Header() {
       <div id="menu-btn" className="fas fa-bars"></div>
         </div>
     <nav className="navbar">
-      <Link to="/">Home</Link>
+      <Link to={"/"}>Home</Link>
       <a href="#about">About</a>
       <a href="#reservation">Reservation</a>
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
       <a href="#reviews">Reviews</a>
-      <Link to="/aboutus">About US</Link>
+      <Link to={"/aboutus"}>About US</Link>
    </nav>
 </section>
   )
