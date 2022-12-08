@@ -8,7 +8,7 @@ import AboutUs from './componments/Section/Pages/AboutUs/AboutUs';
 function App() {
   return (
 <div className='app'>
-<Router basename={'/new-travel-app'}>
+<Router basename={'/hotel-app'}>
         <Header/>
        < Routes>
       < Route  exact path="/" element={<Main/>}/>
