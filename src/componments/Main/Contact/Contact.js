@@ -1,4 +1,5 @@
 import React from 'react'
+import Faq from './Faq'
 
 function Contact() {
   return (
@@ -16,29 +17,7 @@ function Contact() {
       <input type="submit" value="send message" name="send" className="btn"/>
     </form>
 
-   <div className="faq">
-      <h3 className="title">frequently asked questions</h3>
-      <div className="box active">
-         <h3>how to cancel?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.</p>
-      </div>
-      <div className="box">
-         <h3>is there any vacancy?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-      </div>
-      <div className="box">
-         <h3>what are payment methods?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-      </div>
-      <div className="box">
-         <h3>how to claim coupons codes?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-      </div>
-      <div className="box">
-         <h3>what are the age requirements?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam neque quaerat mollitia ratione? Soluta!</p>
-      </div>
-   </div>
+      <Faq/>
 
     </div>
     </section>

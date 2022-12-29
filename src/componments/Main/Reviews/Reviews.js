@@ -1,10 +1,37 @@
+import { useEffect, useRef } from "react";
+import Swiper from "swiper";
 
 
 const Reviews =() =>{
 
+   const reviewsSliderContainer = useRef(null);
+
+  useEffect(() => {
+    if (reviewsSliderContainer.current) {
+      new Swiper(reviewsSliderContainer.current, {
+        loop: true,
+        slidesPerView: "auto",
+        grabCursor: true,
+        spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+          },
+          991: {
+            slidesPerView: 2,
+          },
+        },
+        
+      }
+      );
+    }
+  }, []);
     return(
         <section className="reviews" id="reviews">
-        <div className="swiper reviews-slider">
+        <div ref={reviewsSliderContainer} className="swiper reviews-slider">
         <div className="swiper-wrapper">
          <div className="swiper-slide box">
             <img src="images/pic-1.png" alt=""/>

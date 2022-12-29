@@ -592,3 +592,21 @@ section{
 	padding: 10px;
 	border-radius: 0.5rem;
 }
+
+
+.reviews-slider .swiper-slide:hover {
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+   transform: translateY(-5px);
+   transition:  all 0.3s ease-in-out;
+   
+ }
+
+
+
+
+   .swiper-slide:not(:hover) {
+     transform: scale(0.9) translateY(50px);
+     z-index: 0;
+   }
+ 
+ 
