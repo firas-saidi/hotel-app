@@ -15,6 +15,7 @@ function Main() {
    <ServiceS/>
    <ReservationS/>
    <Gallery/>
+   <AboutS/>
    <Contact/>
    <Reviews/>
  
